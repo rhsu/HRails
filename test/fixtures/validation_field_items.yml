@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  validation_field_id: 
+  is_required: false
+
+two:
+  validation_field_id: 
+  is_required: false

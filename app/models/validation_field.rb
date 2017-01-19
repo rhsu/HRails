@@ -1,0 +1,2 @@
+class ValidationField < ApplicationRecord
+end

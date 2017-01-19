@@ -1,0 +1,1 @@
+json.partial! "validation_field_items/validation_field_item", validation_field_item: @validation_field_item

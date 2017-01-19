@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Validation field:</strong>
+  <%= @validation_field_item.validation_field_id %>
+</p>
+
+<p>
+  <strong>Is required:</strong>
+  <%= @validation_field_item.is_required %>
+</p>
+
+<%= link_to 'Edit', edit_validation_field_item_path(@validation_field_item) %> |
+<%= link_to 'Back', validation_field_items_path %>

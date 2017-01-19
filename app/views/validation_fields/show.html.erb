@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Entity type:</strong>
+  <%= @validation_field.entity_type %>
+</p>
+
+<p>
+  <strong>Version number:</strong>
+  <%= @validation_field.version_number %>
+</p>
+
+<%= link_to 'Edit', edit_validation_field_path(@validation_field) %> |
+<%= link_to 'Back', validation_fields_path %>

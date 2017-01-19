@@ -1,0 +1,1 @@
+json.array! @validation_fields, partial: 'validation_fields/validation_field', as: :validation_field
