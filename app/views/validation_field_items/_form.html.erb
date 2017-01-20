@@ -1,0 +1,27 @@
+<%= form_for(validation_field_item) do |f| %>
+  <% if validation_field_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(validation_field_item.errors.count, "error") %> prohibited this validation_field_item from being saved:</h2>
+
+      <ul>
+      <% validation_field_item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :validation_field_id %>
+    <%= f.text_field :validation_field_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :is_required %>
+    <%= f.check_box :is_required %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

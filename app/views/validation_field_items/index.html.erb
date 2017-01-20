@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Validation Field Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Validation field</th>
+      <th>Is required</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @validation_field_items.each do |validation_field_item| %>
+      <tr>
+        <td><%= validation_field_item.validation_field_id %></td>
+        <td><%= validation_field_item.is_required %></td>
+        <td><%= link_to 'Show', validation_field_item %></td>
+        <td><%= link_to 'Edit', edit_validation_field_item_path(validation_field_item) %></td>
+        <td><%= link_to 'Destroy', validation_field_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Validation Field Item', new_validation_field_item_path %>

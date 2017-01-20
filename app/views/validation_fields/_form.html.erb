@@ -1,0 +1,27 @@
+<%= form_for(validation_field) do |f| %>
+  <% if validation_field.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(validation_field.errors.count, "error") %> prohibited this validation_field from being saved:</h2>
+
+      <ul>
+      <% validation_field.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :entity_type %>
+    <%= f.text_field :entity_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :version_number %>
+    <%= f.text_field :version_number %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
