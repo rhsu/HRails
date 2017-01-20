@@ -14,6 +14,8 @@ class ValidationFieldItemsController < ApplicationController
 
   # GET /validation_field_items/new
   def new
+    puts "I am here!!!"
+
     @validation_field_item = ValidationFieldItem.new
   end
 
